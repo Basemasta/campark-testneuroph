@@ -1,0 +1,35 @@
+ 
+<!--?xml version="1.0" encoding="UTF-8"?-->  
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+    <!-- Master -->
+    <definition name="master.page" template="/WEB-INF/jsp/template/master.jsp">
+	<put-attribute name="header" value="/WEB-INF/jsp/template/header.jsp"/>
+	<put-attribute name="footer" value="/WEB-INF/jsp/template/footer.jsp"/>
+	<put-list-attribute name="cssFiles" >  
+	    <add-attribute value="/resources/libs/bootstrap/css/bootstrap.min.css" />
+	    <add-attribute value="/resources/libs/bootstrap/css/bootstrap-theme.min.css" />
+	    <add-attribute value="/resources/css/style.css" /> 
+	</put-list-attribute>  
+	<put-list-attribute name="jsFiles" >  
+	    <add-attribute value="/resources/libs/jquery-1.9.1.min.js" />  
+	    <add-attribute value="/resources/libs/bootstrap/js/bootstrap.min.js" />  
+	</put-list-attribute> 
+    </definition>
+ 
+    <!--  Pages -->
+    <definition name="indexPage" extends="master.page">
+	<put-attribute name="body" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+    <definition name="examplePage" extends="master.page">
+	<put-attribute name="body" value="/WEB-INF/jsp/example.jsp"/>
+	<put-list-attribute name="jsFiles" inherit="true" >  
+	    <add-attribute value="/resources/js/example.js" />
+	</put-list-attribute>
+	<put-list-attribute name="cssFiles" inherit="true" >  
+	    <add-attribute value="/resources/css/example.css" />  
+	</put-list-attribute>
+    </definition>  
+</tiles-definitions>
