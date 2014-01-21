@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 import org.neuroph.core.events.LearningEvent;
 import org.neuroph.core.events.LearningEventListener;
-import org.neuroph.core.learning.DataSet;
+import org.neuroph.core.data.DataSet;
 import org.neuroph.imgrec.ColorMode;
 import org.neuroph.imgrec.ImageRecognitionHelper;
 import org.neuroph.imgrec.image.Dimension;

@@ -11,8 +11,8 @@
     
     <repositories>
 	<repository>
-	    <id>neuroph.org</id>
-	    <url>http://neuroph.sourceforge.net/maven2/</url>
+	    <id>org.neuroph</id>
+	    <url>https://github.com/Basemasta/mvn-repo/raw/master</url>
 	</repository>
 	<repository>
 	    <id>spring-milestones</id>
@@ -28,7 +28,7 @@
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<spring-version>4.0.0.RELEASE</spring-version>
 	<tiles3-version>3.0.3</tiles3-version>
-	<neuroph-version>2.7</neuroph-version>
+	<neuroph-version>2.8</neuroph-version>
     </properties>
 
     <dependencies>
